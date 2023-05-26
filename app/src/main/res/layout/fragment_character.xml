@@ -3,14 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/r2">
 
     <LinearLayout
         android:id="@+id/layout_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -20,25 +21,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="Name: " />
+            android:text="Name: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView_name"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
-            android:text="name" />
+            android:text="name"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_species"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_name">
@@ -48,24 +50,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="Species: " />
+            android:text="Species: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView_species"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="species" />
+            android:text="species"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_gender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_species">
@@ -75,24 +79,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="Gender: " />
+            android:text="Gender: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView_gender"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="gender" />
+            android:text="gender"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_gender">
@@ -102,24 +108,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="Status: " />
+            android:text="Status: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView_status"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="status" />
+            android:text="status"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_origin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_status">
@@ -129,24 +137,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="Origin: " />
+            android:text="Origin: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView_origin"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="origin" />
+            android:text="origin"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layout_origin">
@@ -156,26 +166,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textSize="18dp"
-            android:text="Location: " />
+            android:text="Location: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <TextView
             android:id="@+id/textView_location"
             android:layout_width="wrap_content"
-            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="location" />
+            android:text="location"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/image_character"
         android:layout_width="400dp"
         android:layout_height="400dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout_location"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

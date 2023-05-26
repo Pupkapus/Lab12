@@ -3,39 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@drawable/r2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainFragment">
 
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_width="390dp"
+        android:layout_height="57dp"
         android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241">
 
         <AutoCompleteTextView
             android:id="@+id/search_character"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:textSize="20dp"
-            android:layout_marginHorizontal="20dp"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Write a name of character"
             android:paddingHorizontal="20dp"
-            android:background="@drawable/rounded"
-            android:hint="Write a name of character" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="125dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.806">
 
         <Button
             android:id="@+id/button_search"
-            android:layout_width="150dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="143dp"
             android:layout_height="wrap_content"
-            android:text="Search"
-            android:background="@drawable/rounded"/>
-
-
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded"
+            android:text="Search" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
